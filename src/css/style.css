@@ -1,0 +1,194 @@
+body {
+	font-size: 1.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+strong, .strong { font-weight:bold; }
+em { font-style: italic; }
+h2 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding-bottom: 1.2rem;
+}
+#pasik {
+	height: 0.6rem;
+	background-color: #0065b3;
+	width: 100%;
+	padding: 0;
+}
+.active { color: blue; }
+header {
+	color: #fff;
+}
+header nav {
+	padding-top: 0.5rem;
+	font-weight: bold;
+}
+header nav a:first-child {
+	padding-right: 1rem;
+}
+#header_obal {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: #000;
+}
+header .kontajner, footer .kontajner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+main {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	font-size: 1.2rem;
+}
+header a {
+	color: #fff;
+	text-decoration: none;
+}
+header a:hover {
+	border-bottom: 1px #fff solid;
+}
+h1 {
+	font-size: 2rem;
+}
+h1 img {
+	height: 2rem;
+}
+h1 a {
+	border-bottom: 1px #000 solid;
+	display: inline-block;
+}
+
+.kontajner {
+	max-width: 65rem;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+#zoznam_uloh table {
+	width: 100%;
+}
+table {
+	border-collapse: collapse;
+}
+tr {
+	border-bottom: solid gray 1px;
+}
+td {
+	padding: 0.8rem 0;
+}
+td a {
+	color: blue;
+}
+table tr td:last-child {
+	text-align: right;
+}
+
+#zoznam_uloh {
+	display: grid;
+	grid-template-columns: 48% 48%;
+	grid-column-gap: 4%;
+}
+
+textarea {
+	width: 100%;
+	height: 7rem;
+	border: solid black 2px;
+}
+
+#pridanie_ulohy label {
+	display: block;
+    margin: 2rem 0;
+}
+ #pridanie_ulohy [type="checkbox"] {
+	outline: 1px solid rgba(0,0,0,1);
+	border-radius: 0;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.btn {
+	background-color: #00703c;
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: 0 2px 0 #002d18;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5rem 0.7rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+
+select {
+	border: black 2px solid;
+	padding: 0.5rem;
+	font-size: 1.1rem;
+}
+
+#tabulky {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 3%;
+}
+#predpoved select {
+	margin: 1rem 0 2rem;
+}
+#tabulky + p {
+	margin-top: 2.5rem;
+}
+#tabulky img {
+	vertical-align: middle;
+}
+#tabulky td { padding: 1rem 0; }
+caption {
+	font-weight: bold;
+}
+
+
+footer {
+	background-color: #dee0e2;
+	padding: 2rem 0;
+}
+footer .kontajner {
+	align-items: flex-end;
+}
+footer p img {
+	margin-right: 0.5rem;
+}
+
+
+
+@media all and (max-width: 740px) {
+	header .kontajner {
+		flex-direction: column;
+		align-items: center;
+	}
+	header nav {
+		padding: 1rem 0;
+	}
+	#tabulky {
+	    grid-template-columns: auto;
+	}
+	#tabulky th, #tabulky td {
+		width: 33.3%;
+		text-align: center;
+	}
+	#tabulky table {
+		margin-top: 3rem;
+	}
+
+	#zoznam_uloh {
+		grid-template-columns: auto;
+	}
+	#pridanie_ulohy {
+		margin-top: 3rem;
+	}
+}
